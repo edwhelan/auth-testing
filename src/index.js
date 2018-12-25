@@ -9,7 +9,7 @@ const morgan = require('morgan');
 const app = express();
 
 // basic database for now
-const question = [];
+const questions = [];
 
 //security for header functionality 
 app.use(helmet());
