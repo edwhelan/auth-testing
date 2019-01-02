@@ -56,7 +56,7 @@ const checkJwt = jwt({
   }),
 
   //validate the audience and the issuer.
-  audience: `${CLIENT_ID}`,
+  audience: `${process.env.AUTH_CLIENT}`,
   issuer: `https://edwhe.auth0.com/`,
   algorithms: ['RS256']
 });

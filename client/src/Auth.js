@@ -7,7 +7,7 @@ class Auth {
       // the following three lines MUST be updated
       domain: 'edwhe.auth0.com',
       audience: 'https://edwhe.auth0.com/userinfo',
-      clientID: '',
+      clientID: `${process.env.REACT_APP_AUTH_CLIENT_ID}`,
       redirectUri: 'http://localhost:3000/callback',
       responseType: 'id_token',
       scope: 'openid profile'
